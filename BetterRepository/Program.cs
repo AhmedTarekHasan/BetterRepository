@@ -104,7 +104,7 @@ namespace BetterRepository
 			*/
 
 
-			result = m_EmployeeQueryRepository.Get(emp => emp.Name.ToLower().Contains("t"));
+			result = m_EmployeeQueryRepository.GetByExpression(emp => emp.Name.ToLower().Contains("t"));
 			Console.WriteLine(result);
 
 			/*

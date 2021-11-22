@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using BetterRepository.Entities;
 using BetterRepository.Models;
 
@@ -46,21 +47,21 @@ namespace BetterRepository.Repositories
 			return Get(emp => true, pageSize, pageIndex);
 		}
 
-		public override IQueryResult<Employee> Get(Func<Employee, bool> predicate)
+		public override IQueryResult<Employee> GetByExpression(Expression<Func<Employee, bool>> predicate)
 		{
 			return Get(predicate, null, null);
 		}
 
-		public override IQueryResult<Employee> Get(Func<Employee, bool> predicate, int pageSize, int pageIndex)
+		public override IQueryResult<Employee> GetByExpression(Expression<Func<Employee, bool>> predicate, int pageSize, int pageIndex)
 		{
 			return Get(predicate, pageSize, pageIndex);
 		}
 
-		private static IQueryResult<Employee> Get(Func<Employee, bool> predicate, int? pageSize, int? pageIndex)
+		private static IQueryResult<Employee> Get(Expression<Func<Employee, bool>> predicate, int? pageSize, int? pageIndex)
 		{
 			var filteredItems = 
 				predicate != null ? 
-					EmployeePersistence.Employees.Where(predicate).ToList() : 
+					EmployeePersistence.Employees.AsQueryable().Where(predicate).ToList() : 
 					EmployeePersistence.Employees;
 
 			var finalPageSize = Math.Min(MaxResultsCountPerPage, filteredItems.Count);
