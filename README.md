@@ -1,10 +1,10 @@
-<link rel="canonical" href="https://levelup.gitconnected.com/better-enhanced-repository-pattern-implementation-in-net-c-4e6f4bbe48a9?sk=dff8866ff91a36a314de8eb40a169955" />
+<link rel="canonical" href="https://www.developmentsimplyput.com/post/better-enhanced-repository-pattern-implementation-in-net-c" />
 
 # Better Enhanced Repository Pattern Implementation in .NET C#
 ### Learn how to implement a better enhanced Repository Pattern following Best Practices to satisfy extended requirements like throttling.
 
 <p align="center">
-  <img src="https://miro.medium.com/max/2000/1*fXpdAT7EJe6gH08hInhjvw.jpeg">
+  <img src="https://static.wixstatic.com/media/488a99_6266baecbd944ea09b7b7d665e02a01a~mv2.png/v1/fill/w_827,h_540,al_c,q_90,enc_auto/488a99_6266baecbd944ea09b7b7d665e02a01a~mv2.png">
 </p>
 
 <br/>
@@ -49,4 +49,4 @@ If you are interested into reading more about this topic, you can read [the rest
 [LinkedIn]: https://www.linkedin.com/in/atarekhasan/
 [Friend Links]: https://www.linkedin.com/feed/update/urn:li:activity:6866082670108143616/
 [Newsletter]: https://www.linkedin.com/newsletters/development-simply-put-6866647119655247872/
-[Article]: https://levelup.gitconnected.com/better-enhanced-repository-pattern-implementation-in-net-c-4e6f4bbe48a9?sk=dff8866ff91a36a314de8eb40a169955
+[Article]: https://www.developmentsimplyput.com/post/better-enhanced-repository-pattern-implementation-in-net-c
